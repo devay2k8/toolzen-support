@@ -1,55 +1,76 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy Policy for the Toolzen Android app.">
-  <title>Privacy Policy — Toolzen</title>
-  <style>
-    body{font:16px/1.65 system-ui,-apple-system,sans-serif;max-width:820px;margin:0 auto;padding:40px 22px;color:#18241d;background:#fff}
-    h1{font-size:2.2rem;line-height:1.15}h2{margin-top:2rem}a{color:#285443}.card{background:#f3f6f1;border-radius:14px;padding:16px}.muted{color:#556159}
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Privacy policy for Toolzen utilities, including progressively released tools.">
+<title>Privacy Policy — Toolzen</title>
+<style>body{font:16px/1.65 system-ui,-apple-system,sans-serif;max-width:820px;margin:0 auto;padding:32px 20px;color:#18241d;background:#fff;overflow-wrap:anywhere}h1{font-size:2.2rem;line-height:1.2}h2{margin-top:2rem;line-height:1.3}a{color:#285443}.card{background:#f3f6f1;border-radius:14px;padding:16px}.muted{color:#556159}li{margin:8px 0}</style>
 </head>
 <body>
 <h1>Privacy Policy for Toolzen</h1>
-<p class="muted"><strong>Effective date:</strong> September 28, 2026</p>
-<p class="card">Toolzen is a general-purpose Android utility app. This policy describes the ten-tool launch release (version 1.12.1). Toolzen does not require an account, does not include advertising in this release, and does not offer in-app purchases in this release.</p>
+<p class="muted"><strong>Effective date:</strong> 30 September 2026<br><strong>Developer:</strong> Puneet Dhiman<br><strong>Contact:</strong> <a href="mailto:puneety2k25@gmail.com">puneety2k25@gmail.com</a></p>
+<p class="card">Toolzen provides up to 35 utility tools. Tools are introduced progressively, so some tools described here may not yet be available in your installed version. Additional tools are planned for future releases. This policy applies to the features you can use; describing a planned tool does not mean that it is active or accessing information in your version. Toolzen does not require a Toolzen account.</p>
 
-<h2>Tools covered by this release</h2>
-<p>The launch release includes Calculator, Document Scanner, QR Code &amp; Barcode Scanner, Unit Converter, Notes, Password Manager, Flashlight, Currency Converter, Image to PDF, and Image Compressor. Other Toolzen utilities may be added in later versions; this policy will be updated when data practices change.</p>
+<h2>1. Tools covered and availability</h2>
+<p>This policy covers Calculator; Document Scanner; QR Code &amp; Barcode Scanner; Unit Converter; Clock (timers, stopwatch, alarms and world clock); Notes; Password Manager; Voice Recorder; Flashlight; Calendar; Currency Converter; Compass; Loan Calculator; Discount Calculator; Random Number Generator; Interest Calculator; Screen Ruler; Text Counter; Dice Roller; Coin Flip; Tip Calculator; Case Converter; Level / Spirit Level; Percentage Calculator; Age Calculator; Date Calculator; Fuel Calculator; BMI Calculator; URL Encoder / Decoder; Image Resize / Crop; Image Compressor; Image to PDF; Protractor; ZIP / File Compressor; and Gold &amp; Silver Price Tracker.</p>
+<p>Availability varies by release, device and permission support. Activating a tool already covered here does not by itself change this policy. New data practices will be disclosed before they are introduced.</p>
 
-<h2>Information kept on your device</h2>
-<p>Notes, preferences, favorites, cached reference rates, and other saved Toolzen content are kept in the app's local storage. Toolzen's Android application disables Android backup for its app data.</p>
-<p>The Password Manager stores vault entries in an encrypted local file. The encryption key is generated and kept in Android Keystore, and the vault requires the device screen lock to unlock. Plaintext vault entries are not written to disk. The encrypted vault is stored in Android's no-backup app area. Toolzen has no Toolzen account and no cloud vault recovery service.</p>
-<p>Images and documents that you choose for scanning, Image to PDF, Image Compressor, or QR/barcode processing are used to perform the requested function. Toolzen does not operate a server that receives those images or documents. When you explicitly save, export, or share output, Android lets you choose the destination. The receiving app or service then handles that information under its own terms and privacy policy.</p>
+<h2>2. Local information and processing</h2>
+<p>Most utility operations run locally. Depending on the tools you use, Toolzen stores notes, preferences, favorites, calculation history, calendar events, timers, alarms, calibration settings, cached reference rates, price observations, target alerts, recordings, and selected documents or images on your device. Calculator inputs, text transformations, random results and other utility inputs are processed locally; individual tools may retain history or settings.</p>
+<p>Toolzen does not operate a cloud synchronization service for your notes, vault, recordings or utility files. Android backup is disabled for app-private data. Files you export can remain outside the app and are controlled by the destination you choose.</p>
 
-<h2>Camera access</h2>
-<p>Toolzen requests camera access when a feature needs it, such as QR/barcode scanning or flashlight-related camera hardware access. Camera access is not used for advertising. The release does not request microphone, contacts, location, broad file-storage, exact-alarm, or background audio-recording permissions.</p>
+<h2>3. Password Manager and clipboard</h2>
+<p>Vault entries are stored in an encrypted local file. The key is managed through Android Keystore, and vault access uses device authentication. Toolzen does not upload vault entries to a Toolzen server or provide cloud recovery. Clearing app data, uninstalling, or losing access to the encryption key may make vault contents unavailable.</p>
+<p>Choosing Copy places information on the device clipboard. Clipboard handling also depends on Android and other applications. Protect your device with a screen lock and avoid copying sensitive information unnecessarily.</p>
 
-<h2>Currency Converter network requests</h2>
-<p>When rates are refreshed, Currency Converter requests reference exchange-rate data from the Frankfurter API. The numeric amount that you type for a conversion is calculated locally and is not included in the rate request. Frankfurter states that its public API does not collect or log personal data, IP addresses, or request URLs, and that the public instance uses Cloudflare only for aggregate traffic statistics. See <a href="https://frankfurter.dev/">Frankfurter's API information</a>.</p>
+<h2>4. Images, documents, QR codes and archives</h2>
+<p>Captured, selected or shared-in files are used for the operation you request: scanning, recognition, barcode reading or creation, image resizing, cropping, compression, PDF creation, or ZIP creation and extraction. Toolzen does not send these files to a Toolzen-operated processing server. Google scanning components are explained below.</p>
+<p>When you save, export or share output, Android or the selected application handles the destination. The receiving service's policy applies to information you send there.</p>
 
-<h2>Google ML Kit and Google Play services</h2>
-<p>Toolzen uses Google ML Kit / Google Play services components for barcode scanning, text recognition, and document scanning. Image recognition and document processing are performed on-device, although required ML models or scanner modules may be supplied or updated through Google Play services.</p>
-<p>Google states that ML Kit Android SDKs collect certain technical information for diagnostics and usage analytics. Depending on the ML Kit feature, this can include device information, app/package information, per-installation or device identifiers, performance metrics such as latency, API configuration, input/output size, feature version, feature event types, and error codes. Google states that this collected data is encrypted in transit using HTTPS and is not transferred to third parties. Toolzen does not use this technical ML Kit data to build its own advertising profile. See <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google's ML Kit Android data disclosure</a>.</p>
+<h2>5. Audio recordings</h2>
+<p>Where Recorder is available, microphone access is requested when you start recording. Audio is stored locally and is not automatically uploaded to a Toolzen server. Android recording may continue while you leave the tool or lock your phone, with a foreground-service notification. Use Stop &amp; save to stop recording. You can delete recordings in the app or export them to a chosen destination.</p>
 
-<h2>Advertising, analytics, and purchases</h2>
-<p>This release does not compile Google Mobile Ads, User Messaging Platform, or Google Play Billing into the release app. Toolzen does not show ads or offer paid utility features in version 1.12.1. Toolzen also does not run a Toolzen-hosted analytics backend. If advertising, purchases, or additional analytics are introduced in a future release, this policy and the Google Play Data Safety declaration will be updated before that release.</p>
+<h2>6. Permissions and sensors</h2>
+<ul>
+<li><strong>Camera:</strong> document capture, barcode scanning and camera-related flashlight access.</li>
+<li><strong>Microphone:</strong> audio recording.</li>
+<li><strong>Notifications and alarms/reminders:</strong> recording status, timers, alarms and calendar reminders.</li>
+<li><strong>Foreground services:</strong> supported recording and alert playback.</li>
+<li><strong>Device sensors:</strong> compass, level and angle measurements. These tools do not use GPS location.</li>
+<li><strong>Internet:</strong> reference-data requests and supported Google components.</li>
+<li><strong>Wake lock, vibration and restart handling:</strong> keeping relevant operations active, providing feedback and restoring supported scheduled alerts after restart.</li>
+</ul>
+<p>Permissions may be declared in a package even when the related tool is not enabled. A declaration does not grant access. Toolzen does not request contacts, GPS location, or broad access to all files. File selection and export use supported Android interfaces. Manage permissions in Android Settings; denied access may prevent a corresponding feature from working.</p>
 
-<h2>Feedback and support</h2>
-<p>In-app feedback is prepared locally. When you choose to share feedback, Toolzen opens Android's share interface and you decide which app or recipient receives it. Toolzen does not automatically upload feedback to a Toolzen feedback server.</p>
-<p>If you contact support by email, the developer receives the email address and message content that you choose to send. Do not send passwords, vault entries, payment information, or other sensitive secrets in a support message.</p>
+<h2>7. Exchange-rate and metal-price services</h2>
+<p>Currency Converter requests reference rates from <a href="https://frankfurter.dev/">Frankfurter</a>. Conversion amounts are calculated locally and are not included in rate requests.</p>
+<p>Where available, Gold &amp; Silver Price Tracker requests quotations from <a href="https://gold-api.com/">Gold-API</a> and may request currency rates from Frankfurter. Requests can reveal the selected metal or currency; target-price settings are evaluated locally.</p>
+<p>These services and their infrastructure providers receive network requests, which expose information such as IP addresses and request details. Their processing and retention are governed by their own policies.</p>
 
-<h2>Children</h2>
-<p>Toolzen is a general-purpose utility application and is not specifically designed for or directed to children.</p>
+<h2>8. Google components and technical data</h2>
+<p>Toolzen uses Google ML Kit and Google Play services for supported scanning and text recognition. Recognition and document processing are performed on-device, although required models or modules may be downloaded or updated through Google Play services.</p>
+<p>Google documents ML Kit technical data collection for diagnostics and usage analytics. Depending on the component, this includes device/app information, installation or device identifiers, performance measurements, feature configuration, input/output sizes, feature events and errors. Google states that the listed ML Kit data is encrypted in transit using HTTPS. See <a href="https://developers.google.com/ml-kit/android-data-disclosure">Google's ML Kit disclosure</a>.</p>
 
-<h2>Data deletion and retention</h2>
-<p>Because Toolzen does not create a Toolzen account or upload your notes, vault, or utility files to a Toolzen server, there is no Toolzen cloud account to delete. You can remove local app data through Android Settings or by uninstalling Toolzen. Files that you exported or shared are controlled by the destination that you selected.</p>
+<h2>9. Advertising, purchases and analytics</h2>
+<p>Advertising and in-app purchase features are disabled in the releases currently covered by this policy. Their packages retain Google Mobile Ads, User Messaging Platform and Google Play Billing libraries; those libraries have not been removed from the app.</p>
+<p>Toolzen does not operate its own analytics backend. Third-party components may process technical information under their documented practices. See <a href="https://policies.google.com/privacy">Google's privacy policy</a> and <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads data disclosure</a>.</p>
+<p>If advertising, purchases or additional data processing are enabled, this policy and applicable Google Play disclosures will be updated before the affected release.</p>
 
-<h2>Changes to this policy</h2>
-<p>This policy may be revised when Toolzen's features, third-party SDKs, or data practices change. The effective date above will be updated when the policy changes materially.</p>
+<h2>10. Feedback and support</h2>
+<p>Feedback drafts are prepared locally. Email support opens your email application with the support recipient, subject and message. You decide whether to send; opening the composer does not send an email automatically. Toolzen does not automatically submit drafts to a Toolzen feedback server.</p>
+<p>If you send support email, the developer receives your email address, message and any attachments you include. Your email provider also processes the communication. Support correspondence is used to respond, investigate reported problems and maintain relevant support records. Do not include passwords, vault contents or other sensitive secrets.</p>
 
-<h2>Contact</h2>
-<p>For privacy or support questions, contact <a href="mailto:puneety2k25@gmail.com">puneety2k25@gmail.com</a>.</p>
-</body>
-</html>
+<h2>11. Retention and deletion</h2>
+<p>Local content remains until you delete it using available app controls, clear app data or uninstall. Exported files may remain and must be deleted separately. Toolzen has no cloud account to delete.</p>
+<p>Support correspondence is retained as needed to handle requests and maintain relevant records. Email support to request deletion of correspondence associated with your address, subject to applicable retention obligations. Deleting Toolzen data does not delete content held by services you separately used to share, export or email information.</p>
+
+<h2>12. Children and security</h2>
+<p>Toolzen is a general-purpose utility app and is not specifically directed to children. Contact support if you believe a child has submitted personal information through support correspondence.</p>
+<p>Local processing, app-private storage and encrypted vault storage reduce exposure, but no storage or transmission method guarantees absolute security. Review destinations before sharing sensitive information.</p>
+
+<h2>13. Changes and contact</h2>
+<p>This policy is designed to cover progressive releases of the tools listed above. Changes in tool count alone do not require a rewrite when data practices stay the same. Material changes to collection, sharing, services or purposes will be reflected here and in applicable store disclosures before release. The effective date will be revised when the policy changes materially.</p>
+<p>For privacy questions, support or deletion requests, contact <strong>Puneet Dhiman</strong> at <a href="mailto:puneety2k25@gmail.com">puneety2k25@gmail.com</a>.</p>
+<p><a href="https://devay2k8.github.io/toolzen-support/privacy.html">Current public privacy policy</a></p>
+</body></html>
+
